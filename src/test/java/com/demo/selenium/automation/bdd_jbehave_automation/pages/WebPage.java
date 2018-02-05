@@ -10,12 +10,12 @@ import net.thucydides.core.pages.PageObject;
 @DefaultUrl("https://www.valtech.com")
 public class WebPage extends PageObject {
 
-    @FindBy(name="search")
-    private WebElementFacade searchTerms;
+    @FindBy(css="<h2 class=\\\"block-header__heading\\\">Latest news</h2>")
+    private WebElementFacade newsSection;
 
     @Loggable(Loggable.INFO)
 	public boolean isSectionPresent() {
-		if (searchTerms.isDisplayed())
+		if (newsSection.isDisplayed())
 			return true;
 		else
 			return false;
