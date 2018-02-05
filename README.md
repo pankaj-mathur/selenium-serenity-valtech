@@ -8,7 +8,7 @@ Purpose was to automate acceptance test in BDD approach
 
 # Feature
 1. Test are written in BDD
-2. JBhave story fils eare created
+2. JBhave story files are created
 3. This framework supports multiple OS and browser
 4. For demo purpose I have added plugin for IE
 5. This can be executed from command prompt, Eclipse or anf CI tool
@@ -22,7 +22,7 @@ Purpose was to automate acceptance test in BDD approach
 
 # How to execute - from command prompt
 1. Check out this source code
-2. Open comand prompt and go to the root of the repository and execute below for test to be executed is chrome (prefer chrome)
+2. Open command prompt and go to the root of the repository and execute below for test to be executed is chrome (prefer chrome)
 mvn integration-test -Dwebdriver.chrome.driver=chromedriver.exe -Dwebdriver.driver=chrome -Dwebdriver.base.url= serenity:aggregate -Dit.test=AcceptanceTestSuite
 
 Or For IE use below command
@@ -34,19 +34,11 @@ mvn integration-test -Dwebdriver.base.url= serenity:aggregate -Dit.test=Acceptan
 
 # Notes
 All the BDD have not been automated, as my purpose was to prove automation 
-1. create hotel entry -- Implemented
-2. create customer entry -- Implemented
-3. delete customer entry -- Implemented
-4. delete a customer entry -- Not Implemented
-5. For multiple entry or multiplerecord creation for hotelor customer we can use same test with multiplerecord i.e Example data
-6. field validation for hotel creation form -- Not Implemented
-7. field validation for customer form -- Not Implemented
-8. search functionality -- Not Implemented
 
 
 # How to view execution report
 
 * Once execution is successful. Navigate to the root folder of the framework.
 * Navigate to /target/site/serenity/index.html
-* This reportcan be viewed in any browser.
+* This report can be viewed in any browser.
 * This report can be integrated with any CI tool.
